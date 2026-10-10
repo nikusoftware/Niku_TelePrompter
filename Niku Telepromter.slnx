@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Niku Telepromter/Niku_Telepromter.client/Niku_Telepromter.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="Niku Telepromter/Niku_Telepromter.Core/Niku_Telepromter.Core.csproj" />
+  <Project Path="Niku Telepromter/Niku_Telepromter.Server/Niku_Telepromter.Server.csproj" />
+</Solution>
