@@ -1,4 +1,4 @@
-# AI-Powered Teleprompter
+# Niku Teleprompter
 
 An intelligent, adaptive teleprompter application that leverages artificial intelligence to deliver a seamless, natural presentation experience. Designed for content creators, public speakers, educators, and broadcasters.
 
