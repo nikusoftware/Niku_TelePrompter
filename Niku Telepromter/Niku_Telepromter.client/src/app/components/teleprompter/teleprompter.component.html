@@ -1,0 +1,92 @@
+<div class="teleprompter-container">
+  <!-- Header with controls -->
+  <div class="teleprompter-header">
+    <h2 class="title">{{ 'Teleprompter' | translate }}</h2>
+    <div class="header-controls">
+      <button class="btn btn-sm btn-info" (click)="loadScript()" [disabled]="isPlaying()">
+        <i class="fa fa-folder-open"></i> {{ 'Load' | translate }}
+      </button>
+      <button class="btn btn-sm btn-info" (click)="saveScript()" [disabled]="isPlaying()">
+        <i class="fa fa-save"></i> {{ 'Save' | translate }}
+      </button>
+      <button class="btn btn-sm btn-danger" (click)="clearScript()" [disabled]="isPlaying()">
+        <i class="fa fa-trash"></i> {{ 'Clear' | translate }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Main content area -->
+  <div class="teleprompter-content">
+    <!-- Script input area -->
+    <div class="script-input-section">
+      <textarea
+        [(ngModel)]="scriptText"
+        class="form-control script-textarea"
+        [disabled]="isPlaying()"
+        placeholder="{{ 'Enter your script here...' | translate }}">
+      </textarea>
+    </div>
+
+    <!-- Script display area (for playback) -->
+    <div class="script-display-section">
+      <div
+        #scriptDisplay
+        class="script-display"
+        [style.font-size.px]="fontSize()">
+        {{ scriptText() }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Control panel -->
+  <div class="control-panel">
+    <!-- Playback controls -->
+    <div class="playback-controls">
+      <button class="btn btn-lg btn-success" (click)="startPlayback()" [disabled]="isPlaying()">
+        <i class="fa fa-play"></i> {{ 'Play' | translate }}
+      </button>
+      <button class="btn btn-lg btn-warning" (click)="pausePlayback()" [disabled]="!isPlaying()">
+        <i class="fa fa-pause"></i> {{ 'Pause' | translate }}
+      </button>
+      <button class="btn btn-lg btn-danger" (click)="resetScroll()">
+        <i class="fa fa-stop"></i> {{ 'Stop' | translate }}
+      </button>
+    </div>
+
+    <!-- Font size controls -->
+    <div class="control-group">
+      <label>{{ 'Font Size' | translate }}: {{ fontSize() }}px</label>
+      <div class="button-group">
+        <button class="btn btn-sm btn-secondary" (click)="decreaseFontSize()" [disabled]="fontSize() <= 12">
+          <i class="fa fa-minus"></i> {{ 'Decrease' | translate }}
+        </button>
+        <button class="btn btn-sm btn-secondary" (click)="increaseFontSize()" [disabled]="fontSize() >= 48">
+          <i class="fa fa-plus"></i> {{ 'Increase' | translate }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Speed controls -->
+    <div class="control-group">
+      <label>{{ 'Playback Speed' | translate }}: {{ playbackSpeed() | number:'1.2-2' }}x</label>
+      <div class="button-group">
+        <button class="btn btn-sm btn-secondary" (click)="decreaseSpeed()" [disabled]="playbackSpeed() <= 0.5">
+          <i class="fa fa-minus"></i> {{ 'Slower' | translate }}
+        </button>
+        <button class="btn btn-sm btn-secondary" (click)="increaseSpeed()" [disabled]="playbackSpeed() >= 2">
+          <i class="fa fa-plus"></i> {{ 'Faster' | translate }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Status indicator -->
+    <div class="status-indicator">
+      <span *ngIf="isPlaying()" class="badge bg-success">
+        <i class="fa fa-circle animate-pulse"></i> {{ 'Playing' | translate }}
+      </span>
+      <span *ngIf="!isPlaying()" class="badge bg-secondary">
+        {{ 'Stopped' | translate }}
+      </span>
+    </div>
+  </div>
+</div>

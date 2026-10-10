@@ -1,0 +1,14 @@
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\bin\Debug\net10.0\Niku_Telepromter.Core.deps.json
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\bin\Debug\net10.0\Niku_Telepromter.Core.dll
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\bin\Debug\net10.0\Niku_Telepromter.Core.pdb
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.csproj.AssemblyReference.cache
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.AssemblyInfoInputs.cache
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.AssemblyInfo.cs
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.csproj.CoreCompileInputs.cache
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.sourcelink.json
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.dll
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\refint\Niku_Telepromter.Core.dll
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Telepromter.Core.pdb
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\ref\Niku_Telepromter.Core.dll
+C:\Users\Niku University\Desktop\Niku_Telepromter\git\Niku_TelePrompter\Niku Telepromter\Niku_Telepromter.Core\obj\Debug\net10.0\Niku_Tel.9A29FF8D.Up2Date

@@ -1,13 +1,14 @@
 // ---------------------------------------
 // Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
+// Templates: www.nikutv.com/templates
+// (c) 2024 www.nikutv.com/mit-license
 // ---------------------------------------
 
 import { Component, OnInit, OnDestroy, Input, inject } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AlertService, MessageSeverity, DialogType } from '../../services/alert.service';
 import { AuthService } from '../../services/auth.service';
@@ -19,7 +20,7 @@ import { UserLogin } from '../../models/user-login.model';
     selector: 'app-login',
     templateUrl: './login.component.html',
     styleUrl: './login.component.scss',
-    imports: [FormsModule, NgClass]
+    imports: [FormsModule, NgClass, TranslateModule]
 })
 
 export class LoginComponent implements OnInit, OnDestroy {

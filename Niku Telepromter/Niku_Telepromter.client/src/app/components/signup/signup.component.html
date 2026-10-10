@@ -1,0 +1,122 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0"><i class="fa fa-user-plus"></i> {{ 'Create Account' | translate }}</h4>
+        </div>
+        <div class="card-body">
+          <form *ngIf="formResetToggle" (ngSubmit)="signup()" novalidate>
+            <!-- Username -->
+            <div class="mb-3">
+              <label for="userName" class="form-label">{{ 'Username' | translate }}:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                [(ngModel)]="userSignUp.userName"
+                name="userName"
+                required
+                minlength="2"
+                placeholder="Enter username"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">{{ 'Email' | translate }}:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                [(ngModel)]="userSignUp.email"
+                name="email"
+                required
+                placeholder="Enter email"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label">{{ 'Full Name' | translate }}:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                [(ngModel)]="userSignUp.fullName"
+                name="fullName"
+                placeholder="Enter full name"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">{{ 'Phone Number' | translate }}:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                [(ngModel)]="userSignUp.phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter phone number"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="password" class="form-label">{{ 'Password' | translate }}:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                [(ngModel)]="userSignUp.password"
+                name="password"
+                required
+                minlength="6"
+                placeholder="Enter password (min 6 characters)"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">{{ 'Confirm Password' | translate }}:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                [(ngModel)]="userSignUp.confirmPassword"
+                name="confirmPassword"
+                required
+                minlength="6"
+                placeholder="Confirm password"
+                [disabled]="isLoading">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid gap-2">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                [disabled]="isLoading">
+                <span *ngIf="!isLoading"><i class="fa fa-user-plus"></i> {{ 'Create Account' | translate }}</span>
+                <span *ngIf="isLoading">
+                  <i class="fa fa-spinner fa-spin"></i> {{ 'Creating...' | translate }}
+                </span>
+              </button>
+            </div>
+
+            <!-- Sign In Link -->
+            <div class="text-center mt-3">
+              <p>{{ 'Already have an account?' | translate }} <a routerLink="/login">{{ 'Sign In' | translate }}</a></p>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div class="text-center">
+              <p><a routerLink="/forgot-password">{{ 'Forgot Password?' | translate }}</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

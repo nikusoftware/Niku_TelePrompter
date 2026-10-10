@@ -1,7 +1,7 @@
 // ---------------------------------------
 // Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
+// Templates: www.nikutv.com/templates
+// (c) 2024 www.nikutv.com/mit-license
 // ---------------------------------------
 
 import { Injectable, inject } from '@angular/core';
@@ -167,5 +167,9 @@ export class AccountService {
 
   get currentUser() {
     return this.authService.currentUser;
+  }
+
+  get isLoggedIn(): boolean {
+    return this.authService.isLoggedIn;
   }
 }

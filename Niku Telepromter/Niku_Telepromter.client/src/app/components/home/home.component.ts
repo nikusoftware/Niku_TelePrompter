@@ -1,7 +1,7 @@
 // ---------------------------------------
 // Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
+// Templates: www.nikutv.com/templates
+// (c) 2024 www.nikutv.com/mit-license
 // ---------------------------------------
 
 import { AfterViewInit, Component, ElementRef, inject, viewChild } from '@angular/core';

@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+/Niku Telepromter/Niku_Telepromter.client/obj/Debug
+/.vs
+/Niku Telepromter/Niku_Telepromter.Core/bin/Debug/net10.0

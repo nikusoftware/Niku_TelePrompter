@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("www.ebenmonney.com")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("www.nikutv.com")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2024 www.ebenmonney.com")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2024 www.nikutv.com")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Data Access Layer for the Quick Application template")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("10.21.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("10.21.0+d0eec0b9bd496fcbf04d244c3bc2e9451732eeac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("10.21.0+53af6fde4d06c9623d32280ae809f5eec4c21cfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Niku_Telepromter.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Niku_Telepromter.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("10.21.0.0")]

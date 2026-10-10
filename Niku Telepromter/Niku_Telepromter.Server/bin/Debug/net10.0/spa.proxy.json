@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\Niku University\\Desktop\\Niku_Telepromter\\git\\Niku_TelePrompter\\Niku Telepromter\\Niku_Telepromter.Server\\..\\Niku_Telepromter.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

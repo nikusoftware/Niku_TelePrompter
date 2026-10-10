@@ -5,11 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Version>10.21.0</Version>
-    <Company>www.ebenmonney.com</Company>
+    <Company>www.nikutv.com</Company>
     <Authors>$(Company)</Authors>
     <Description>Data Access Layer for the Quick Application template</Description>
-    <Copyright>Copyright © 2024 www.ebenmonney.com</Copyright>
-    <PackageProjectUrl>https://www.ebenmonney.com/quickapp</PackageProjectUrl>
+    <Copyright>Copyright © 2024 www.nikutv.com</Copyright>
+    <PackageProjectUrl>https://www.nikutv.com/quickapp</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

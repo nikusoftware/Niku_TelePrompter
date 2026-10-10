@@ -1,7 +1,7 @@
 // ---------------------------------------
 // Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
+// Templates: www.nikutv.com/templates
+// (c) 2024 www.nikutv.com/mit-license
 // ---------------------------------------
 
 import { Injectable, inject } from '@angular/core';
@@ -181,6 +181,30 @@ export class AccountEndpoint extends EndpointBase {
     return this.http.get<T>(this.permissionsUrl, this.requestHeaders).pipe(
       catchError(error => {
         return this.handleError(error, () => this.getPermissionsEndpoint<T>());
+      }));
+  }
+
+  getSignUpEndpoint<T>(user: object): Observable<T> {
+    const signUpUrl = this.configurations.baseUrl + '/api/auth/signup';
+    return this.http.post<T>(signUpUrl, JSON.stringify(user), this.requestHeaders).pipe(
+      catchError(error => {
+        return this.handleError(error, () => this.getSignUpEndpoint<T>(user));
+      }));
+  }
+
+  getForgotPasswordEndpoint<T>(email: string): Observable<T> {
+    const forgotPasswordUrl = this.configurations.baseUrl + '/api/auth/forgot-password';
+    return this.http.post<T>(forgotPasswordUrl, JSON.stringify({ email }), this.requestHeaders).pipe(
+      catchError(error => {
+        return this.handleError(error, () => this.getForgotPasswordEndpoint<T>(email));
+      }));
+  }
+
+  getResetPasswordEndpoint<T>(resetData: object): Observable<T> {
+    const resetPasswordUrl = this.configurations.baseUrl + '/api/auth/reset-password';
+    return this.http.post<T>(resetPasswordUrl, JSON.stringify(resetData), this.requestHeaders).pipe(
+      catchError(error => {
+        return this.handleError(error, () => this.getResetPasswordEndpoint<T>(resetData));
       }));
   }
 }
